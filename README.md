@@ -1,4 +1,5 @@
 # my-library
+>> Vue CLI project under heavy development
 
 ## Project setup
 ```
