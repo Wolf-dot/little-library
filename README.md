@@ -1,4 +1,4 @@
-# my-library
+# little-library
 > Vue CLI project under heavy development
 
 ## Project setup
