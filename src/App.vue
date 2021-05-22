@@ -1,15 +1,44 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Header :name="name" />
+  <div v-if="showModal">
+    <Modal
+    @close="toggleModal"
+    :err="error.message"
+    content="What should we call you?"
+    :error="error.is">
+      <Input @input="toggleModal"/>
+    </Modal>    
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Modal from './components/Modal.vue'
+import Header from './components/Header.vue'
+import Input from './components/Input.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    Modal,
+    Input
+  },
+  data() {
+    return {
+      showModal: true,
+      error: {is: false, message: "Please input name before proceeding"},
+      name: ""
+    }
+  },
+  methods: {
+    toggleModal(text){
+      if(text === ""){
+        this.error.is = true
+      }else{
+        this.name = text
+        this.showModal = !this.showModal        
+      }
+    }
   }
 }
 </script>
