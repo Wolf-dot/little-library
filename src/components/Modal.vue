@@ -3,7 +3,7 @@
         <div class="modal">
             <h2> {{ content }} </h2>
             <h3 v-if="error" class="error"> {{ err }} </h3>
-            <slot></slot>
+            <slot></slot> 
         </div>
     </div>
 </template>
