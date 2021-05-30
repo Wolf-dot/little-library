@@ -22,11 +22,16 @@
 
 <script>
 export default {
-    name: "Results",
-    props:{
-        results: Object
+  name: "Results",
+  props: {
+    results: Object,
+  },
+  methods: {
+    showMore(result) {
+      this.$emit("more", result.show.externals.imdb);
     }
-}
+  }
+};
 </script>
 
 <style scoped>
