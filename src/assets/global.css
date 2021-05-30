@@ -4,3 +4,9 @@ body {
 .error {
     color: red;
 }
+.rectangle {
+    width: 11em;
+    height: 15.5em;
+    background: darkgray;
+    margin: auto;
+  }
