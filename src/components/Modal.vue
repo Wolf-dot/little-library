@@ -2,7 +2,6 @@
     <div class="backdrop">
         <div class="modal">
             <h2> {{ content }} </h2>
-            <h3 v-if="error" class="error"> {{ err }} </h3>
             <slot></slot> 
         </div>
     </div>
@@ -12,9 +11,7 @@
 export default {
     name: "Modal",
     props: {
-        content: String,
-        err: String,
-        error: Boolean
+        content: String
     }
 }
 </script>
@@ -23,12 +20,12 @@ export default {
     .backdrop{
         top: 0px;
         position: fixed;
-        background: lightgray;
+        background: rgba(0,0,0,.8);
         width: 100%;
         height: 100%;
     }
     .modal{
-        background: white;
+        background: #181818;
         width: fit-content;
         padding: 20px;
         margin: 100px auto;
