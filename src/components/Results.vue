@@ -29,6 +29,6 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+@import "../assets/shows.css";
 </style>
