@@ -1,4 +1,4 @@
-# Little Show lLibrary
+# Little Show Library
 > Search up shows and see what's playing right now
 
 ## Table of contents
