@@ -87,7 +87,7 @@ export default {
       title = title.trim();
       title = title.replaceAll(" ", "+");
       const response = await fetch(
-        "http://api.tvmaze.com/search/shows?q=" + title
+        "https://api.tvmaze.com/search/shows?q=" + title
       );
       this.results = await response.json();
       this.loading = false;
@@ -109,7 +109,7 @@ export default {
     var date = new Date();
     date = date.toISOString().slice(0, 10);
     const response = await fetch(
-      "http://api.tvmaze.com/schedule/web?date=" + date + "&country=US"
+      "https://api.tvmaze.com/schedule/web?date=" + date + "&country=US"
     );
     this.airing.shows = await response.json();
   },
