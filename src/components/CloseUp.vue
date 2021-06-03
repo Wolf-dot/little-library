@@ -33,7 +33,7 @@ export default {
   },
   async created() {
     const response = await fetch(
-      "http://api.tvmaze.com/lookup/shows?imdb=" + this.item.show
+      "https://api.tvmaze.com/lookup/shows?imdb=" + this.item.show
     );
     this.show = await response.json();
     if(this.show !== null){
