@@ -3,6 +3,7 @@
 
 ## Table of contents
 * [General info](#general-info)
+* [Live demo](#live-demo)
 * [Setup](#setup)
 * [Usage](#usage)
 * [Features](#features)
@@ -11,6 +12,10 @@
 ## General info
 It's a rather simple Vue CLI project for learning purposes, showcasing the use of components, props, API and others.\
 Public API used for the project is from [TVMaze](https://www.tvmaze.com/api) and to style it I've chosen a really fun and simple Kimeiga's [Bahunya](https://github.com/Kimeiga/bahunya).
+
+## Live demo
+Demo available on Glitch!
+https://everlasting-broadleaf-grain.glitch.me/
 
 ## Setup
 ```
